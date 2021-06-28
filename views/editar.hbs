@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" action="/api/product/{{products._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                    <fieldset class="centro">
+                        <legend class="text-center header">Editar productos en la base de datos.</legend>
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="f_id" name="_id" type="text" disabled value="{{products._id}}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" value="{{products.name}}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fprice" name="price" type="number" value="{{products.price}}" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                            	<label for="lg_category" class=" form-control sr-only"> <b>Category</b></label>
+                                <select class="form-control" value="{{products.category}}" id="lg_price" name="category">            
+                                    <option>Computers</option>
+                                    <option>Phones</option>
+                                    <option>Accesories</option>
+                                </select>
+                            </div>      
+                        </div>
+
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="picture" name="picture"  value="{{products.picture}}" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="ol form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input class="form-control" id="description" name="description" value="{{products.description}}" rows="7"></input>
+                            </div>
+                        </div>
+
+                        <div class="il form-group">
+                            <div class="col-md-9 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Modificar</button>
+                                <button type="submit" formaction="/api/product/{{products._id}}?_method=delete" method=POST class="btn btn-primary btn-lg">Eliminar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

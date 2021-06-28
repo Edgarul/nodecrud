@@ -1,0 +1,31 @@
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Prices</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col">Picture</th>
+      <th scope="col">*</th>
+      <th scope="col">*</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      {{#productos}}
+    <tr>
+      <td>{{_id}}</td>
+      <td>{{name}}</td>
+      <td>{{price}}</td>
+      <td>{{category}}</td>
+      <td>{{description}}</td>
+      <td>{{picture}}</td>
+      <td><form action="/editar/{{_id}}" method="GET"> 
+      <button type="submit" class="btn btn-dark">Editar</button></form></td>
+      <td><form action="/editar/{{_id}}" method="GET"> 
+      <button type="submit" class="btn btn-dark">Eliminar</button></form></td>
+    </tr>
+    {{/productos}}
+  </tbody>
+</table>

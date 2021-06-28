@@ -1,0 +1,25 @@
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.centro{
+    padding: 0 50px;
+}
+
+.ol{
+    position: relative;
+    left: 20%;
+}
+
+.il{
+    padding-top: 2%;
+    position: relative;
+    left: 15%;
+}
