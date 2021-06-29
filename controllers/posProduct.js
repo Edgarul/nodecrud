@@ -20,6 +20,6 @@ module.exports = (req, res) =>{
         });
         
         //res.status(200).send({product:productStored});
-        res.redirect('/registrar')
+        res.redirect('/api/product');
         });
 }
