@@ -1,13 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">CRUD</a>
+                <a class="navbar-brand">CRUD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/registrar">REGISTRAR</a>
-                    <a class="nav-link" href="api/product/home">MOSTRAR</a>
+                    <form action="/api/product" method="GET"> 
+                        <button type="submit" class="btn btn-dark">REGISTRAR</button>
+                    </form>
+                    <form action="/api/product/home" method="GET"> 
+                        <button type="submit" class="btn btn-dark">HOME</button>
+                    </form>
                 </div>
                 </div>
             </div>

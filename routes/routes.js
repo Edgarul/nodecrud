@@ -32,8 +32,8 @@ app.get('/', (req, res)=>{
 
 
 //Insertar
-app.get('/registrar', (req, res)=>{
-    res.render('product')
+app.get('/api/product', (req, res)=>{
+    res.render('product');
 });
 
 
