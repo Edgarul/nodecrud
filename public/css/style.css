@@ -23,3 +23,8 @@
     position: relative;
     left: 15%;
 }
+
+.bar{
+    border-radius: 30px;
+    padding: 0 5px;
+}
