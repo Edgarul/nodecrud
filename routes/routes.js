@@ -33,7 +33,7 @@ app.get('/', (req, res)=>{
 
 //Insertar
 app.get('/registrar', (req, res)=>{
-    res.render('Product')
+    res.render('product')
 });
 
 
