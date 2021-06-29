@@ -30,9 +30,6 @@ app.get('/', (req, res)=>{
     }).lean();
 });
 
-app.use((req, res)=>{
-    res.render('notfound');
-});
 
 //Insertar
 app.get('/registrar', (req, res)=>{
@@ -99,3 +96,6 @@ app.put('/api/product/:id', putProduct)
 const deleteProduct = require('../controllers/deleteProduct.js');
 app.delete('/api/product/:id', deleteProduct);
 
+app.use((req, res)=>{
+    res.render('notfound');
+});
