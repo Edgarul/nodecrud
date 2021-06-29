@@ -96,6 +96,3 @@ app.put('/api/product/:id', putProduct)
 const deleteProduct = require('../controllers/deleteProduct.js');
 app.delete('/api/product/:id', deleteProduct);
 
-app.use((req, res)=>{
-    res.render('notfound');
-});
